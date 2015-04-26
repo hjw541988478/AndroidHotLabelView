@@ -33,5 +33,5 @@ proguard/
 .DS_Store
 /build
 /captures
-.bak
-AndroidHotLabelView.iml
+*.bak
+*.iml
