@@ -34,4 +34,4 @@ proguard/
 /build
 /captures
 *.bak
-/*.iml
+*.iml
