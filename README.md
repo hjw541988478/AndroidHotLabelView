@@ -1,22 +1,22 @@
-#AndroidHotLabelView
+# AndroidHotLabelView
 Sometimes , we need to show lots of hot tags in our app, like popular comments in some shopping apps or somebody's  personalized lables in some social apps,so I just have created the hot label view.
 
-#ScreenShots
+## ScreenShots
 <img src="https://github.com/hjw541988478/AndroidHotLabelView/blob/master/screenshots/screen_shot.png" >
 
-#DemoApk
+## DemoApk
 [Download](https://github.com/hjw541988478/AndroidHotLabelView/blob/master/HotLabelView.apk)
 
-#Features
+## Features
 - support two modes (**single** choice mode and **multiple** choice mode)
 - provide the interface that you would like to implement in need,and you can use the selceted data array.
 - customize the style by the method `setChildViewStyle`.
 
-#Usage
+## Usage
 
-1.make the `AndroidHotLabelView` avaliable in your project ;
+1. make the `AndroidHotLabelView` avaliable in your project ;
 
-2.puts the `net.innlab.ui.HotLabelView` in your layout xml file :
+2. puts the `net.innlab.ui.HotLabelView` in your layout xml file :
 ``` xml
 <net.innlab.hlv.ui.HotLabelView
     android:id="@+id/hlv_single"
@@ -24,11 +24,11 @@ Sometimes , we need to show lots of hot tags in our app, like popular comments i
     android:layout_height="wrap_content">
 </net.innlab.hlv.ui.HotLabelView>
 ```
-3.initialize the `HotLabelView` by code :
+3. initialize the `HotLabelView` by code :
 ```
 HotLabelView hlv_single = (HotLabelView) findViewById(R.id.hlv_single);
 ```
-4.set the choice mode , the seleceted style and populate the container childviews:
+4. set the choice mode , the seleceted style and populate the container childviews:
 ``` java
 //make it single choice
 hlv_single.setChoiceMode(MODE.SINGLE);
@@ -46,7 +46,7 @@ for (int i = 0; i < titiles.length; i++) {
 }
 hlv_single.setContainerChildViews(views);
 ```
-5.implements the interface `OnChildViewSelectedListener`:
+5. implements the interface `OnChildViewSelectedListener`:
 ```
 //like this
 hlv_single.setItemSelectedListenrt(new OnChildViewSelectedListener() {
@@ -66,10 +66,6 @@ hlv_single.setItemSelectedListenrt(new OnChildViewSelectedListener() {
 		}
 	};);
 ```
-Pull Requests
-===
-I will gladly accept pull requests for fixes and feature enhancements but please do them in the develop branch.
-
-License
+## License
 ===
 CampusAssustant is licensed under [Apache License](https://github.com/hjw541988478/AndroidHotLabelView/blob/master/LICENSE).
